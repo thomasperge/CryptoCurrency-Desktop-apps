@@ -3,8 +3,22 @@ const path = require('path')
 
 function createWindow () {
   const win = new BrowserWindow({
-    width: 800,
-    height: 600,
+    frame: true,
+    title: 'CryptoCurrency 0.1.0 (87)',
+    width: 375,
+    height: 625,
+    minWidth: 375, 
+    maxWidth: 625,
+    minHeight: 650,
+    maxHeight: 850,
+    // resizable: false,
+    autoHideMenuBar: true,
+    backgroundColor: '#2e2c29',
+    titleBarStyle: 'hidden',
+    titleBarOverlay: {
+      color: '#000',
+      symbolColor: '#fff'
+    },
     webPreferences: {
       preload: path.join(__dirname, 'preload.js')
     }

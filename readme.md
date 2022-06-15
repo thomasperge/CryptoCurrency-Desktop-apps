@@ -1,4 +1,4 @@
-Made by ElThomas
+Made by ElThomas ❤️
 
 CryptoCurrency Destock App use:
 - ElectronJs

@@ -16,6 +16,8 @@
   "dependencies": {
     "axios": "^0.27.2",
     "cheerio": "^1.0.0-rc.11",
+    "custom-electron-titlebar": "^4.1.0",
+    "jquery": "^3.6.0",
     "node-coinmarketcap": "^0.2.0",
     "path": "^0.12.7"
   }

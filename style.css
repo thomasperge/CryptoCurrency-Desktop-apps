@@ -2,34 +2,42 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'monospace', monospace;      
+    font-family: 'monospace', monospace;
+    overflow-x: hidden;
+    overflow-y: hidden; 
 }
 
 .container{
     width: 100%;
     height: 100vh;
-    background-color: #18181c; 
+    background-color: #111112; 
     background-position: center;
     background-size: cover;
-    padding: 0 7%;
     color: #fff;
+}
+
+.test{
+    width: 100%;
+    height: 4.6vh;
+    background-color: #18181c;
 }
 
 .coin-list{
     position: static;
-    padding: 5%;
     display: block;
     align-items: center;
+    /* margin-top: 4.6vh; */
+    /* background-color: #ff960b; */
 }
 
 .coin{
     display: flex;
     align-items: center;
     font-size: 14px;
-    margin: 2% 5%;
+    margin: 2%;
     color: #ff960b;
-    padding: 20px 30px;
-    border-radius: 8px;
+    padding: 10px 20px;
+    /* background-color: red; */
 }
 
 .coin img{
@@ -45,4 +53,11 @@
 .coin h5{
     color: #fff;
     margin-bottom: 5px;
+}
+
+.ligne{
+    background: transparent;
+    border-color: #595656;
+    border-width: 0 0 1px;
+    border-style: solid;
 }

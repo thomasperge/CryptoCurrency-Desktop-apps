@@ -3,41 +3,27 @@ const path = require('path')
 
 function createWindow () {
   const win = new BrowserWindow({
-    frame: true,
+    frame: false,
     title: 'CryptoCurrency 0.1.0 (87)',
-    width: 375,
-    height: 625,
-    minWidth: 375, 
-    maxWidth: 625,
+    width: 415,
+    height: 650,
+    minWidth: 415, 
     minHeight: 650,
-    maxHeight: 850,
+    maxWidth: 515,
+    maxHeight: 750,
     // resizable: false,
     autoHideMenuBar: true,
-    backgroundColor: '#2e2c29',
     titleBarStyle: 'hidden',
     titleBarOverlay: {
-      color: '#000',
+      color: '#18181c',
       symbolColor: '#fff'
     },
     webPreferences: {
-      preload: path.join(__dirname, 'preload.js')
-    }
+      preload: path.join(__dirname, 'preload.js'),
+      nodeIntegration: true,
+    },
   })
-
   win.loadFile('index.html')
-
-  ipcMain.handle('dark-mode:toggle', () => {
-    if (nativeTheme.shouldUseDarkColors) {
-      nativeTheme.themeSource = 'light'
-    } else {
-      nativeTheme.themeSource = 'dark'
-    }
-    return nativeTheme.shouldUseDarkColors
-  })
-
-  ipcMain.handle('dark-mode:system', () => {
-    nativeTheme.themeSource = 'system'
-  })
 }
 
 app.whenReady().then(() => {

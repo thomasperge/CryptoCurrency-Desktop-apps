@@ -21,7 +21,6 @@ var litecoin = 'https://api.coingecko.com/api/v3/coins/litecoin/market_chart?vs_
 //      => interval: daily
 
 
-
 // === Function to get price coin on the marker place ===
 function getDataPrices(ctx, urlMarketPrice, colorGraph){
     $.getJSON(urlMarketPrice, function(data) {

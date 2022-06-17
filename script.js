@@ -68,72 +68,72 @@ $.ajax(settings).done(function (response){
         if(response[indice].id == 'bitcoin'){
             let pricePercent = (Math.round(response[indice].price_change_percentage_24h_in_currency * 100) / 100)
             display(btc, response[indice], percentage_btc, pricePercent, color(pricePercent))
-            displayImage(response[indice].image, 41, 41, 'BitcoinImage');
+            displayImage(response[indice].image, 38, 38, 'BitcoinImage');
         };
         if(response[indice].id == 'ethereum'){
             let pricePercent = (Math.round(response[indice].price_change_percentage_24h_in_currency * 100) / 100)
             display(eth, response[indice], percentage_eth, pricePercent, color(pricePercent))
-            displayImage(response[indice].image, 41, 41, 'EthereumImage');
+            displayImage(response[indice].image, 38, 38, 'EthereumImage');
         };
         if(response[indice].id == 'tether'){
             let pricePercent = (Math.round(response[indice].price_change_percentage_24h_in_currency * 100) / 100)
             display(tether, response[indice], percentage_tether, pricePercent, color(pricePercent))
-            displayImage(response[indice].image, 41, 41, 'TetherImage');
+            displayImage(response[indice].image, 38, 38, 'TetherImage');
         };
         if(response[indice].id == 'usd-coin'){
             let pricePercent = (Math.round(response[indice].price_change_percentage_24h_in_currency * 100) / 100)
             display(usd, response[indice], percentage_usd, pricePercent, color(pricePercent))
-            displayImage(response[indice].image, 41, 41, 'UsdImage');
+            displayImage(response[indice].image, 38, 38, 'UsdImage');
         };
         if(response[indice].id == 'binancecoin'){
             let pricePercent = (Math.round(response[indice].price_change_percentage_24h_in_currency * 100) / 100)
             display(bnb, response[indice], percentage_bnb, pricePercent, color(pricePercent))
-            displayImage(response[indice].image, 41, 41, 'BinancecoinImage');
+            displayImage(response[indice].image, 38, 38, 'BinancecoinImage');
         };
         if(response[indice].id == 'binance-usd'){
             let pricePercent = (Math.round(response[indice].price_change_percentage_24h_in_currency * 100) / 100)
             display(binanceusd, response[indice], percentage_binanceusd, pricePercent, color(pricePercent))
-            displayImage(response[indice].image, 41, 41, 'BinanceusdImage');
+            displayImage(response[indice].image, 38, 38, 'BinanceusdImage');
         };
         if(response[indice].id == 'cardano'){
             let pricePercent = (Math.round(response[indice].price_change_percentage_24h_in_currency * 100) / 100)
             display(cardano, response[indice], percentage_cardano, pricePercent, color(pricePercent))
-            displayImage(response[indice].image, 41, 41, 'CardanoImage');
+            displayImage(response[indice].image, 38, 38, 'CardanoImage');
         };
         if(response[indice].id == 'ripple'){
             let pricePercent = (Math.round(response[indice].price_change_percentage_24h_in_currency * 100) / 100)
             display(ripple, response[indice], percentage_ripple, pricePercent, color(pricePercent))
-            displayImage(response[indice].image, 41, 41, 'RippleImage');
+            displayImage(response[indice].image, 38, 38, 'RippleImage');
         };
         if(response[indice].id == 'solana'){
             let pricePercent = (Math.round(response[indice].price_change_percentage_24h_in_currency * 100) / 100)
             display(solana, response[indice], percentage_solana, pricePercent, color(pricePercent))
-            displayImage(response[indice].image, 41, 41, 'SolanaImage');
+            displayImage(response[indice].image, 38, 38, 'SolanaImage');
         };
         if(response[indice].id == 'polkadot'){
             let pricePercent = (Math.round(response[indice].price_change_percentage_24h_in_currency * 100) / 100)
             display(polkadot, response[indice], percentage_polkadot, pricePercent, color(pricePercent))
-            displayImage(response[indice].image, 41, 41, 'PolkadotImage');
+            displayImage(response[indice].image, 38, 38, 'PolkadotImage');
         };
         if(response[indice].id == 'dogecoin'){
             let pricePercent = (Math.round(response[indice].price_change_percentage_24h_in_currency * 100) / 100)
             display(doge, response[indice], percentage_doge, pricePercent, color(pricePercent))
-            displayImage(response[indice].image, 41, 41, 'DogeImage');
+            displayImage(response[indice].image, 38, 38, 'DogeImage');
         };
         if(response[indice].id == 'shiba-inu'){
             let pricePercent = (Math.round(response[indice].price_change_percentage_24h_in_currency * 100) / 100)
             display(shiba, response[indice], percentage_shiba, pricePercent, color(pricePercent))
-            displayImage(response[indice].image, 41, 41, 'Shiba-inuImage');
+            displayImage(response[indice].image, 38, 38, 'Shiba-inuImage');
         };
         if(response[indice].id == 'avalanche-2'){
             let pricePercent = (Math.round(response[indice].price_change_percentage_24h_in_currency * 100) / 100)
             display(avalanche, response[indice], percentage_avalanche, pricePercent, color(pricePercent))
-            displayImage(response[indice].image, 41, 41, 'Avalanche2Image');
+            displayImage(response[indice].image, 38, 38, 'Avalanche2Image');
         };
         if(response[indice].id == 'litecoin'){
             let pricePercent = (Math.round(response[indice].price_change_percentage_24h_in_currency * 100) / 100)
             display(litecoin, response[indice], percentage_litecoin, pricePercent, color(pricePercent))
-            displayImage(response[indice].image, 41, 41, 'LitecoinImage');
+            displayImage(response[indice].image, 38, 38, 'LitecoinImage');
         };
     }
 })

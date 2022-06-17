@@ -26,20 +26,23 @@
     overflow-x: hidden;
 }
 
+/* ScrollBar */
 ::-webkit-scrollbar {
-    width: 0px;
+    width: 12px;
+    border-radius: 20px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: #111112;
 }
   
 ::-webkit-scrollbar-thumb {
-background: #888;
+    background: #18181c;
+    border-radius: 100px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-background: #555;
+    background: #1a1a1d;
 }
 
 .container{
@@ -84,7 +87,7 @@ background: #555;
 }
 
 .coin img{
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 .coin p{

@@ -68,7 +68,7 @@ function getDataPrices(ctx, urlMarketPrice, colorGraph){
 };
 
 const BTCgraph = document.getElementById('graphBtc').getContext('2d');
-getDataPrices(BTCgraph, btcUrl, "#f7931a")
+getDataPrices(BTCgraph, btcUrl, "#ff7300")
 
 const ETHgraph = document.getElementById('graphEth').getContext('2d');
 getDataPrices(ETHgraph, ethUrl, "#62688f")

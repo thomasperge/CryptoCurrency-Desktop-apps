@@ -16,4 +16,4 @@ npm install
 npm start
 ```
 
-!! package.json >> ```script: {"start": "electron ."} ```!!
+!! package.json >> ```script: {"start": "electron ."}```!!

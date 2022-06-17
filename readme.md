@@ -1,10 +1,14 @@
-Made by ElThomas ❤️
+Made by ElThomas ❤️ in France
+
+➡️ The desktop application: ``Cryptocurrency App``, is an interface to help trading on the crypto market in real time. With the most popular cryptos in real time, a graph of the last 9 days for each crypto. And a bullish or bearish indicator for the coin.
+
 
 CryptoCurrency Desktop App use:
 - ElectronJs
 - CoinGecko API
 - Bootstrap
-- React
+- React.js
+- chart.js
 
 Run the code:
 ```

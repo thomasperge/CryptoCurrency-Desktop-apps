@@ -16,7 +16,8 @@ npm install
 npm start
 ```
 
-### Demo Beta App Desktop
-![Screenshot](./assets/AssetsCryptoCurrency.png)
+### Demo Beta App Desktop and Phone
+![Assets-Desktop](./assets/AssetsCryptoCurrency.png)
+![Assets-Phone](./assets/AssetsCryptoCurrencyPhone.png)
 
-!! package.json >> ```script: {"start": "electron ."}```!!
+!! package.json >> ```script: {"start": "electron ."}``` !!

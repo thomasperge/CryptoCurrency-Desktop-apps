@@ -61,15 +61,16 @@
 
 .coin{
     display: flex;
+    width: 100%;
     align-items: center;
     font-size: 14px;
     margin: 1%;
     color: #ff960b;
     padding: 10px 20px;
+    /* background-color: red; */
 }
 
 .coin img{
-    width: 40px;
     margin-right: 10px;
 }
 
@@ -91,8 +92,14 @@
     border-style: solid;
 }
 
+.priceText{
+    width: 27vh;
+}
+
 .graphCoin{
-    height:10vh;
-    width:25vh;
-    padding-left: 2vh;
+    height: 10vh;
+    width: 25vh;
+    padding-left: 0vh;
+    margin-left: 3vh;
+    /* background-color: yellowgreen; */
 }

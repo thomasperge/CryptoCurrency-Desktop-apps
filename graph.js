@@ -13,7 +13,7 @@ var dogeUrl = "https://api.coingecko.com/api/v3/coins/dogecoin/market_chart?vs_c
 
 
 // === Function to get price coin on the marker place ===
-function getDataPrices(ctx, urlMarketPrice){
+function getDataPrices(ctx, urlMarketPrice, colorGraph){
     $.getJSON(urlMarketPrice, function(data) {
         console.log('URl ==>', urlMarketPrice)
         // ==== Get Data ====
@@ -30,7 +30,7 @@ function getDataPrices(ctx, urlMarketPrice){
                 labels: ['d9','d8', 'd7', 'd6', 'd5', 'd4', 'd3', 'd2', 'd1', 'd0'],
                 datasets: [{ 
                     data: dataPrices,
-                    borderColor: "#ff0000",
+                    borderColor: colorGraph,
                     fill: false,
                     tension: 0.3,
                     borderWidth: 3.5,
@@ -68,13 +68,13 @@ function getDataPrices(ctx, urlMarketPrice){
 };
 
 const BTCgraph = document.getElementById('graphBtc').getContext('2d');
-getDataPrices(BTCgraph, btcUrl)
+getDataPrices(BTCgraph, btcUrl, "#f7931a")
 
 const ETHgraph = document.getElementById('graphEth').getContext('2d');
-getDataPrices(ETHgraph, ethUrl)
+getDataPrices(ETHgraph, ethUrl, "#62688f")
 
 const THEgraph = document.getElementById('graphTether').getContext('2d');
-getDataPrices(THEgraph, thetUrl)
+getDataPrices(THEgraph, thetUrl, "#03ac84")
 
 const DOGEgraph = document.getElementById('graphDoge').getContext('2d');
-getDataPrices(DOGEgraph, dogeUrl)
+getDataPrices(DOGEgraph, dogeUrl, "#decb88")

@@ -3,70 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <title id="titlebar">CryptoCurrency - 1.0.0 (86)</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js"></script>
 </head>
 <body style="-webkit-app-region: drag; -webkit-user-select: none;">
     <div class="container">
 
-        <div class="test"></div>
+        <div class="titlebar">
+            <div class="titlebarText">
+                CryptoCurrency - 1.0.0 (86)
+            </div>
+        </div>
 
         <div class="coin-list">
 
             <div class="ligne"></div>
 
-            <!-- Bitcoin -->
+            <!-- == Bitcoin == -->
             <div class="coin">
+                <!-- Data -->
                 <div id="BitcoinImage"></div>
                 <div>
-                    <h3>$<span id="bitcoin"></span></h3>
+                    <p>$<span id="bitcoin"></span></p>
                     <h5><span id="percentage_btc"></span></h5>
-                    <p>Bitcoin</p>
+                </div>
+
+                <!-- Graph -->
+                <div class="graphCoin">
+                    <canvas id="graphBtc" style="position: relative; height:10vh; width:25vh;"></canvas>
                 </div>
             </div>
 
+
             <div class="ligne"></div>
+
 
             <!-- Ethereum -->
             <div class="coin">
+                <!-- Data -->
                 <div id="EthereumImage"></div>
                 <div>
-                    <h3>$<span id="ethereum"></span></h3>
+                    <p>$<span id="ethereum"></span></p>
                     <h5><span id="percentage_eth"></span></h5>
-                    <p>Ethereum</p>
+                </div>
+
+                <!-- Graph -->
+                <div class="graphCoin">
+                    <canvas id="graphEth" style="position: relative; height:10vh; width:25vh;"></canvas>
                 </div>
             </div>
 
+
             <div class="ligne"></div>
+
 
             <!-- Tether -->
             <div class="coin">
+                <!-- Data -->
                 <div id="TetherImage"></div>
                 <div>
-                    <h3>$<span id="tether"></span></h3>
+                    <p>$<span id="tether"></span></p>
                     <h5><span id="percentage_tether"></span></h5>
-                    <p>Tether</p>
+                </div>
+
+                <!-- Graph -->
+                <div class="graphCoin">
+                    <canvas id="graphTether" style="position: relative; height:10vh; width:25vh;"></canvas>
                 </div>
             </div>
+
 
             <div class="ligne"></div>
 
+
             <!-- DogeCoin -->
             <div class="coin">
+                <!-- Data -->
                 <div id="DogeImage"></div>
                 <div>
-                    <h3>$<span id="dogecoin"></span></h3>
+                    <p>$<span id="dogecoin"></span></p>
                     <h5><span id="percentage_doge"></span></h5>
-                    <p>Dogecoin</p>
+                </div>
+
+                <!-- Graph -->
+                <div class="graphCoin">
+                    <canvas id="graphDoge" style="position: relative; height:10vh; width:25vh;"></canvas>
                 </div>
             </div>
+
 
             <div class="ligne"></div>
 
 
         </div>
     </div>
-
+    <script src="./graph.js"></script>
     <script src="./script.js"></script>
 </body>
 </html>

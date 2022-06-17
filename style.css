@@ -1,8 +1,28 @@
+@font-face {
+    font-family: "SpotifyBold";
+    src: url("assets/font/Gotham-Black.otf");
+}
+
+@font-face {
+    font-family: "SpotifyMedium";
+    src: url("assets/font/GothamMedium.ttf");
+}
+
+@font-face {
+    font-family: "Script";
+    src: url("assets/font/Taner\ Ardali\ \ Antikor\ Mono\ Regular.ttf");
+}
+
+@font-face {
+    font-family: "FiraMona";
+    src: url("assets/font/FiraMono-Regular.otf");
+}
+  
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'monospace', monospace;
+    font-family: 'FiraMona';
     overflow-x: hidden;
     overflow-y: hidden; 
 }
@@ -16,28 +36,36 @@
     color: #fff;
 }
 
-.test{
-    width: 100%;
+.titlebar{
     height: 4.6vh;
+    line-height: 4.6vh;
+    white-space: nowrap;
     background-color: #18181c;
+}
+
+.titlebarText{
+    text-align: left;
+    padding-left: 7px;
+    width: fit-content;
+    height: fit-content;
+    font-size: 2vh;
+    font-family: 'SpotifyMedium';
+    color: #8c8c8e;
 }
 
 .coin-list{
     position: static;
     display: block;
     align-items: center;
-    /* margin-top: 4.6vh; */
-    /* background-color: #ff960b; */
 }
 
 .coin{
     display: flex;
     align-items: center;
     font-size: 14px;
-    margin: 2%;
+    margin: 1%;
     color: #ff960b;
     padding: 10px 20px;
-    /* background-color: red; */
 }
 
 .coin img{
@@ -45,9 +73,10 @@
     margin-right: 10px;
 }
 
-.coin h3{
+.coin p{
     color: #fff;
     margin-bottom: 5px;
+    font-size: 4vh;
 }
 
 .coin h5{
@@ -60,4 +89,10 @@
     border-color: #595656;
     border-width: 0 0 1px;
     border-style: solid;
+}
+
+.graphCoin{
+    height:10vh;
+    width:25vh;
+    padding-left: 2vh;
 }

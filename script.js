@@ -18,7 +18,7 @@ var settings = {
 
 $.ajax(settings).done(function (response){
     for(indice in response){
-        console.log(response[indice])
+        // console.log(response[indice])
         
         // Function display
         function display(nameBlock, indice, percentageBlock, changePriceDay, colorPercent){
@@ -48,22 +48,22 @@ $.ajax(settings).done(function (response){
         if(response[indice].id == 'bitcoin'){
             let pricePercent = (Math.round(response[indice].price_change_percentage_24h_in_currency * 100) / 100)
             display(btc, response[indice], percentage_btc, pricePercent, color(pricePercent))
-            displayImage(response[indice].image, 44, 44, 'BitcoinImage');
+            displayImage(response[indice].image, 41, 41, 'BitcoinImage');
         }
         if(response[indice].id == 'ethereum'){
             let pricePercent = (Math.round(response[indice].price_change_percentage_24h_in_currency * 100) / 100)
             display(eth, response[indice], percentage_eth, pricePercent, color(pricePercent))
-            displayImage(response[indice].image, 44, 44, 'EthereumImage');
+            displayImage(response[indice].image, 41, 41, 'EthereumImage');
         }
         if(response[indice].id == 'tether'){
             let pricePercent = (Math.round(response[indice].price_change_percentage_24h_in_currency * 100) / 100)
             display(tether, response[indice], percentage_tether, pricePercent, color(pricePercent))
-            displayImage(response[indice].image, 44, 44, 'TetherImage');
+            displayImage(response[indice].image, 41, 41, 'TetherImage');
         }
         if(response[indice].id == 'dogecoin'){
             let pricePercent = (Math.round(response[indice].price_change_percentage_24h_in_currency * 100) / 100)
             display(doge, response[indice], percentage_doge, pricePercent, color(pricePercent))
-            displayImage(response[indice].image, 44, 44, 'DogeImage');
+            displayImage(response[indice].image, 41, 41, 'DogeImage');
         }
     }
 })

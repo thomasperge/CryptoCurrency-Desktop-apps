@@ -1,6 +1,6 @@
 Made by ElThomas ❤️
 
-CryptoCurrency Destock App use:
+CryptoCurrency Desktop App use:
 - ElectronJs
 - CoinGecko API
 - Bootstrap

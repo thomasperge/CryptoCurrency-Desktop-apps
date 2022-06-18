@@ -1,37 +1,45 @@
-var btc = document.getElementById("bitcoin")
-var eth = document.getElementById("ethereum")
-var tether = document.getElementById("tether")
-var usd = document.getElementById("usd-coin")
-var bnb = document.getElementById("binancecoin")
-var binanceusd = document.getElementById("binance-usd")
-var cardano = document.getElementById("cardano")
-var ripple = document.getElementById("ripple")
-var solana = document.getElementById("solana")
-var polkadot = document.getElementById("polkadot")
-var doge = document.getElementById("dogecoin")
-var shiba = document.getElementById("shiba-inu")
-var avalanche = document.getElementById("avalanche-2")
-var litecoin = document.getElementById("litecoin")
+var btc = document.getElementById("bitcoin");
+var eth = document.getElementById("ethereum");
+var tether = document.getElementById("tether");
+var usd = document.getElementById("usd-coin");
+var bnb = document.getElementById("binancecoin");
+var binanceusd = document.getElementById("binance-usd");
+var cardano = document.getElementById("cardano");
+var ripple = document.getElementById("ripple");
+var solana = document.getElementById("solana");
+var polkadot = document.getElementById("polkadot");
+var doge = document.getElementById("dogecoin");
+var shiba = document.getElementById("shiba-inu");
+var avalanche = document.getElementById("avalanche-2");
+var litecoin = document.getElementById("litecoin");
+var poligon = document.getElementById("poligon");
+var axieInfinity = document.getElementById("axie-infinity");
+var apecoin = document.getElementById("apecoin");
+var the_sandbox = document.getElementById("the-sandbox");
 
-var percentage_btc = document.getElementById("percentage_btc")
-var percentage_eth = document.getElementById("percentage_eth")
-var percentage_tether = document.getElementById("percentage_tether")
-var percentage_usd = document.getElementById("percentage_usd")
-var percentage_bnb = document.getElementById("percentage_binancecoin")
-var percentage_binanceusd = document.getElementById("percentage_binance-usd")
-var percentage_cardano = document.getElementById("percentage_cardano")
-var percentage_ripple = document.getElementById("percentage_ripple")
-var percentage_solana = document.getElementById("percentage_solana")
-var percentage_polkadot = document.getElementById("percentage_polkadot")
-var percentage_doge = document.getElementById("percentage_doge")
-var percentage_shiba = document.getElementById("percentage_shiba-inu")
-var percentage_avalanche = document.getElementById("percentage_avalanche-2")
-var percentage_litecoin = document.getElementById("percentage_litecoin")
+var percentage_btc = document.getElementById("percentage_btc");
+var percentage_eth = document.getElementById("percentage_eth");
+var percentage_tether = document.getElementById("percentage_tether");
+var percentage_usd = document.getElementById("percentage_usd");
+var percentage_bnb = document.getElementById("percentage_binancecoin");
+var percentage_binanceusd = document.getElementById("percentage_binance-usd");
+var percentage_cardano = document.getElementById("percentage_cardano");
+var percentage_ripple = document.getElementById("percentage_ripple");
+var percentage_solana = document.getElementById("percentage_solana");
+var percentage_polkadot = document.getElementById("percentage_polkadot");
+var percentage_doge = document.getElementById("percentage_doge");
+var percentage_shiba = document.getElementById("percentage_shiba-inu");
+var percentage_avalanche = document.getElementById("percentage_avalanche-2");
+var percentage_litecoin = document.getElementById("percentage_litecoin");
+var percentage_poligon = document.getElementById("percentage_poligon");
+var percentage_axieInfinity = document.getElementById("percentage_axie-infinity");
+var percentage_apecoin = document.getElementById("percentage_apecoin");
+var percentage_the_sandbox = document.getElementById("percentage_the-sandbox");
 
 var settings = {
     "async": true,
     "scrossDomian": true,
-    "url": "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=bitcoin%2Cethereum%2Ctether%2Cusd-coin%2Cbinancecoin%2Cbinance-usd%2Ccardano%2Cripple%2Csolana%2Cpolkadot%2Cdogecoin%2Cshiba-inu%2Cavalanche-2%2Clitecoin&order=market_cap_desc&per_page=100&page=1&sparkline=false&price_change_percentage=24h",
+    "url": "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=bitcoin%2Cethereum%2Ctether%2Cusd-coin%2Cbinancecoin%2Cbinance-usd%2Ccardano%2Cripple%2Csolana%2Cpolkadot%2Cdogecoin%2Cshiba-inu%2Cavalanche-2%2Clitecoin%2Cmatic-network%2Caxie-infinity%2Capecoin%2Cthe-sandbox&order=market_cap_desc&per_page=100&page=1&sparkline=false&price_change_percentage=24h",
     "method": "GET",
     "headers": {}
 }
@@ -134,6 +142,26 @@ $.ajax(settings).done(function (response){
             let pricePercent = (Math.round(response[indice].price_change_percentage_24h_in_currency * 100) / 100)
             display(litecoin, response[indice], percentage_litecoin, pricePercent, color(pricePercent))
             displayImage(response[indice].image, 36, 36, 'LitecoinImage');
+        };
+        if(response[indice].id == 'matic-network'){
+            let pricePercent = (Math.round(response[indice].price_change_percentage_24h_in_currency * 100) / 100)
+            display(poligon, response[indice], percentage_poligon, pricePercent, color(pricePercent))
+            displayImage(response[indice].image, 36, 36, 'PoligonImage');
+        };
+        if(response[indice].id == 'axie-infinity'){
+            let pricePercent = (Math.round(response[indice].price_change_percentage_24h_in_currency * 100) / 100)
+            display(axieInfinity, response[indice], percentage_axieInfinity, pricePercent, color(pricePercent))
+            displayImage(response[indice].image, 36, 36, 'Axie-infinityImage');
+        };
+        if(response[indice].id == 'apecoin'){
+            let pricePercent = (Math.round(response[indice].price_change_percentage_24h_in_currency * 100) / 100)
+            display(apecoin, response[indice], percentage_apecoin, pricePercent, color(pricePercent))
+            displayImage(response[indice].image, 36, 36, 'ApecoinImage');
+        };
+        if(response[indice].id == 'the-sandbox'){
+            let pricePercent = (Math.round(response[indice].price_change_percentage_24h_in_currency * 100) / 100)
+            display(the_sandbox, response[indice], percentage_the_sandbox, pricePercent, color(pricePercent))
+            displayImage(response[indice].image, 36, 36, 'The-sandboxImage');
         };
     }
 })

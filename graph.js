@@ -12,6 +12,10 @@ var dogecoin = "https://api.coingecko.com/api/v3/coins/dogecoin/market_chart?vs_
 var shiba = 'https://api.coingecko.com/api/v3/coins/shiba-inu/market_chart?vs_currency=usd&days=9&interval=daily'
 var avalanche = 'https://api.coingecko.com/api/v3/coins/avalanche-2/market_chart?vs_currency=usd&days=9&interval=daily'
 var litecoin = 'https://api.coingecko.com/api/v3/coins/litecoin/market_chart?vs_currency=usd&days=9&interval=daily'
+var poligon = 'https://api.coingecko.com/api/v3/coins/matic-network/market_chart?vs_currency=usd&days=9&interval=daily'
+var axie_infinity = 'https://api.coingecko.com/api/v3/coins/axie-infinity/market_chart?vs_currency=usd&days=9&interval=daily'
+var apecoin = 'https://api.coingecko.com/api/v3/coins/apecoin/market_chart?vs_currency=usd&days=9&interval=daily'
+var the_sandbox = 'https://api.coingecko.com/api/v3/coins/the-sandbox/market_chart?vs_currency=usd&days=9&interval=daily'
 // Setting:
 //   - Site: https://www.coingecko.com/fr/api/documentation
 //   - /coins/{id}/markets_charts
@@ -77,43 +81,55 @@ function getDataPrices(ctx, urlMarketPrice, colorGraph){
 };
 
 const BTCgraph = document.getElementById('graphBtc').getContext('2d');
-getDataPrices(BTCgraph, bitcoin, "#ff7300")
+getDataPrices(BTCgraph, bitcoin, "#ff7300");
 
 const ETHgraph = document.getElementById('graphEth').getContext('2d');
-getDataPrices(ETHgraph, ethereum, "#62688f")
+getDataPrices(ETHgraph, ethereum, "#98a3d2");
 
 const THEgraph = document.getElementById('graphTether').getContext('2d');
-getDataPrices(THEgraph, tether, "#03ac84")
+getDataPrices(THEgraph, tether, "#0de4b1");
 
 const USDgraph = document.getElementById('graphUsd').getContext('2d');
-getDataPrices(USDgraph, usd_coin, "#2f7bce")
+getDataPrices(USDgraph, usd_coin, "#2f7bce");
 
 const BNBgraph = document.getElementById('graphBinancecoin').getContext('2d');
-getDataPrices(BNBgraph, binancecoin, "#f4c01b")
+getDataPrices(BNBgraph, binancecoin, "#ffd200");
 
 const BNBUSDgraph = document.getElementById('graphBinance-usd').getContext('2d');
-getDataPrices(BNBUSDgraph, binance_usd, "#e6b311")
+getDataPrices(BNBUSDgraph, binance_usd, "#e6b311");
 
 const CARDgraph = document.getElementById('graphCardano').getContext('2d');
-getDataPrices(CARDgraph, cardano, "#2c75db")
+getDataPrices(CARDgraph, cardano, "#2c75db");
 
 const XRPgraph = document.getElementById('graphRipple').getContext('2d');
-getDataPrices(XRPgraph, ripple, "#ffffff")
+getDataPrices(XRPgraph, ripple, "#ffffff");
 
 const SOLgraph = document.getElementById('graphSolana').getContext('2d');
-getDataPrices(SOLgraph, solana, "#9945ff")
+getDataPrices(SOLgraph, solana, "#9945ff");
 
 const POLgraph = document.getElementById('graphPolkadot').getContext('2d');
-getDataPrices(POLgraph, polkadot, "#e6007a")
+getDataPrices(POLgraph, polkadot, "#ff0087");
 
 const DOGEgraph = document.getElementById('graphDoge').getContext('2d');
-getDataPrices(DOGEgraph, dogecoin, "#decb88")
+getDataPrices(DOGEgraph, dogecoin, "#decb88");
 
 const SHIBAgraph = document.getElementById('graphShiba-inu').getContext('2d');
-getDataPrices(SHIBAgraph, shiba, "#ff0000")
+getDataPrices(SHIBAgraph, shiba, "#ff0000");
 
 const AVAXgraph = document.getElementById('graphAvalanche2').getContext('2d');
-getDataPrices(AVAXgraph, avalanche, "#d8494a")
+getDataPrices(AVAXgraph, avalanche, "#d8494a");
 
 const LITEgraph = document.getElementById('graphLitecoin').getContext('2d');
-getDataPrices(LITEgraph, litecoin, "#838383")
+getDataPrices(LITEgraph, litecoin, "#838383");
+
+const MATICgraph = document.getElementById('graphPoligon').getContext('2d');
+getDataPrices(MATICgraph, poligon, "#995dff");
+
+const AXSgraph = document.getElementById('graphAxie-infinity').getContext('2d');
+getDataPrices(AXSgraph, axie_infinity, "#00ffff");
+
+const APEgraph = document.getElementById('graphApecoin').getContext('2d');
+getDataPrices(APEgraph, apecoin, "#0753f5");
+
+const SANDgraph = document.getElementById('graphThe-sandbox').getContext('2d');
+getDataPrices(SANDgraph, the_sandbox, "#00adf0");

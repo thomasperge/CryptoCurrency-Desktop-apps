@@ -5,6 +5,9 @@ function createWindow () {
   const win = new BrowserWindow({
     frame: false,
     title: 'CryptoCurrency 0.1.0 (87)',
+    icon: path.join(__dirname, "./assets/icon.ico"),
+    alwaysOnTop: true,
+    setVisibleOnAllWorkspaces: true,
     width: 415,
     height: 650,
     minWidth: 415, 

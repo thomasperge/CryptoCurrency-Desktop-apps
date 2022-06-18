@@ -7,18 +7,21 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js"></script>
+    <script src="https://kit.fontawesome.com/8d2922082a.js" crossorigin="anonymous"></script>
+
+    
 </head>
-<body style="-webkit-app-region: drag; -webkit-user-select: none;">
+<body>
+
     <div class="titlebar">
         <div class="titlebarText">
+            <!--  Title Text-->
             CryptoCurrency - 1.0.0 (86)
         </div>
     </div>
+
     
-    <div class="container">
-
-        
-
+    <div class="container" style="-webkit-app-region: drag; -webkit-user-select: none;">
         <div class="coin-list">
 
             <div class="ligne"></div>
@@ -290,7 +293,20 @@
 
         </div>
     </div>
+
+
+    <div class="containerCheckbox">
+        <input type="checkbox" class="checkbox" id="checkbox">
+        <label for="checkbox" class="label">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+            <div class="ball"></div>
+        </label>
+    </div>
+
+
     <script src="./graph.js"></script>
     <script src="./script.js"></script>
+    <script src="./checkbox.js"></script>
 </body>
 </html>

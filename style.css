@@ -26,7 +26,24 @@
     overflow-x: hidden;
 }
 
-/* ScrollBar */
+body{
+    background-color: #111112;
+    transition: background 0.2s linear;
+}
+
+body.dark{
+    background-color: #fff;
+}
+
+body .coin p{
+    color: #fff;
+}
+
+body.dark .coin p{
+    color: #000;
+}
+
+/* ===== ScrollBar ===== */
 ::-webkit-scrollbar {
     width: 11px;
     border-radius: 100%;
@@ -46,7 +63,6 @@
 }
 
 .container{
-    background-color: #111112; 
     background-position: center;
     background-size: cover;
     padding-top: 4.6vh;
@@ -64,6 +80,7 @@
 }
 
 .titlebarText{
+    display: flex;
     text-align: left;
     padding-left: 7px;
     width: fit-content;
@@ -73,6 +90,59 @@
     color: #8c8c8e;
 }
 
+/* ===== Check Box Moon/Sun ===== */
+
+.containerCheckbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    margin: 0;
+}
+
+.checkbox{
+    opacity: 0;
+    position: absolute;
+}
+
+.label{
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 50px;
+    position: relative;
+    padding: 5px;
+    height: 26px;
+    width: 50px;
+    transform: scale(1);
+}
+
+.ball{
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 26px;
+    height: 22px;
+    width: 22px;
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball{
+    transform: translateX(-24px);
+}
+
+.fa-moon{
+    color: #f1c40f;
+}
+
+.fa-sun{
+    color: #f39c12;
+}
+
+
+/* ===== Coin ===== */
 .coin-list{
     position: static;
     display: block;
@@ -87,16 +157,13 @@
     margin: 1%;
     color: #ff960b;
     padding: 10px 20px;
-    /* background-color: brown; */
 }
 
 .coin img{
     margin-right: 20px;
-    /* background-color: aquamarine; */
 }
 
 .coin p{
-    color: #fff;
     margin-bottom: 5px;
     font-size: 4vh;
 }

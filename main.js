@@ -44,3 +44,10 @@ app.on('window-all-closed', () => {
     app.quit()
   }
 })
+
+
+
+// Run Code for Windows, Mac and Linux:
+// Mac: npm run package-mac
+// Windows: npm run package-win
+// Linus: npm run package-linux

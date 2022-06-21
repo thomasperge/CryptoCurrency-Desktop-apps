@@ -1,6 +1,3 @@
-const path = require('path');
-const url = require('url');
-
 window.addEventListener('DOMContentLoaded', () => {
   const replaceText = (selector, text) => {
     const element = document.getElementById(selector)

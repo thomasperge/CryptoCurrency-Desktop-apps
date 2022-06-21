@@ -1,21 +1,21 @@
 @font-face {
     font-family: "SpotifyBold";
-    src: url("assets/font/Gotham-Black.otf");
+    src: url("./assets/font/Gotham-Black.otf");
 }
 
 @font-face {
     font-family: "SpotifyMedium";
-    src: url("assets/font/GothamMedium.ttf");
+    src: url("./assets/font/GothamMedium.ttf");
 }
 
 @font-face {
     font-family: "Script";
-    src: url("assets/font/Taner\ Ardali\ \ Antikor\ Mono\ Regular.ttf");
+    src: url("./assets/font/MonoRegular.ttf");
 }
 
 @font-face {
     font-family: "FiraMona";
-    src: url("assets/font/FiraMono-Regular.otf");
+    src: url("./assets/font/FiraMono-Regular.otf");
 }
   
 *{

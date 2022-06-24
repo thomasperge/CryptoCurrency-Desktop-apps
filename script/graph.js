@@ -1,27 +1,27 @@
-var bitcoin = "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=9&interval=daily"
-var ethereum = "https://api.coingecko.com/api/v3/coins/ethereum/market_chart?vs_currency=usd&days=9&interval=daily"
-var tether = "https://api.coingecko.com/api/v3/coins/tether/market_chart?vs_currency=usd&days=9&interval=daily"
-var usd_coin = 'https://api.coingecko.com/api/v3/coins/usd-coin/market_chart?vs_currency=usd&days=9&interval=daily'
-var binancecoin = 'https://api.coingecko.com/api/v3/coins/binancecoin/market_chart?vs_currency=usd&days=9&interval=daily'
-var binance_usd = 'https://api.coingecko.com/api/v3/coins/binance-usd/market_chart?vs_currency=usd&days=9&interval=daily'
-var cardano = 'https://api.coingecko.com/api/v3/coins/cardano/market_chart?vs_currency=usd&days=9&interval=daily'
-var ripple = 'https://api.coingecko.com/api/v3/coins/ripple/market_chart?vs_currency=usd&days=9&interval=daily'
-var solana = 'https://api.coingecko.com/api/v3/coins/solana/market_chart?vs_currency=usd&days=9&interval=daily'
-var polkadot = 'https://api.coingecko.com/api/v3/coins/polkadot/market_chart?vs_currency=usd&days=9&interval=daily'
-var dogecoin = "https://api.coingecko.com/api/v3/coins/dogecoin/market_chart?vs_currency=usd&days=9&interval=daily"
-var shiba = 'https://api.coingecko.com/api/v3/coins/shiba-inu/market_chart?vs_currency=usd&days=9&interval=daily'
-var avalanche = 'https://api.coingecko.com/api/v3/coins/avalanche-2/market_chart?vs_currency=usd&days=9&interval=daily'
-var litecoin = 'https://api.coingecko.com/api/v3/coins/litecoin/market_chart?vs_currency=usd&days=9&interval=daily'
-var poligon = 'https://api.coingecko.com/api/v3/coins/matic-network/market_chart?vs_currency=usd&days=9&interval=daily'
-var axie_infinity = 'https://api.coingecko.com/api/v3/coins/axie-infinity/market_chart?vs_currency=usd&days=9&interval=daily'
-var apecoin = 'https://api.coingecko.com/api/v3/coins/apecoin/market_chart?vs_currency=usd&days=9&interval=daily'
-var the_sandbox = 'https://api.coingecko.com/api/v3/coins/the-sandbox/market_chart?vs_currency=usd&days=9&interval=daily'
+var bitcoin = "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=7&interval=daily"
+var ethereum = "https://api.coingecko.com/api/v3/coins/ethereum/market_chart?vs_currency=usd&days=7&interval=daily"
+var tether = "https://api.coingecko.com/api/v3/coins/tether/market_chart?vs_currency=usd&days=7&interval=daily"
+var usd_coin = 'https://api.coingecko.com/api/v3/coins/usd-coin/market_chart?vs_currency=usd&days=7&interval=daily'
+var binancecoin = 'https://api.coingecko.com/api/v3/coins/binancecoin/market_chart?vs_currency=usd&days=7&interval=daily'
+var binance_usd = 'https://api.coingecko.com/api/v3/coins/binance-usd/market_chart?vs_currency=usd&days=7&interval=daily'
+var cardano = 'https://api.coingecko.com/api/v3/coins/cardano/market_chart?vs_currency=usd&days=7&interval=daily'
+var ripple = 'https://api.coingecko.com/api/v3/coins/ripple/market_chart?vs_currency=usd&days=7&interval=daily'
+var solana = 'https://api.coingecko.com/api/v3/coins/solana/market_chart?vs_currency=usd&days=7&interval=daily'
+var polkadot = 'https://api.coingecko.com/api/v3/coins/polkadot/market_chart?vs_currency=usd&days=7&interval=daily'
+var dogecoin = "https://api.coingecko.com/api/v3/coins/dogecoin/market_chart?vs_currency=usd&days=7&interval=daily"
+var shiba = 'https://api.coingecko.com/api/v3/coins/shiba-inu/market_chart?vs_currency=usd&days=7&interval=daily'
+var avalanche = 'https://api.coingecko.com/api/v3/coins/avalanche-2/market_chart?vs_currency=usd&days=7&interval=daily'
+var litecoin = 'https://api.coingecko.com/api/v3/coins/litecoin/market_chart?vs_currency=usd&days=7&interval=daily'
+var poligon = 'https://api.coingecko.com/api/v3/coins/matic-network/market_chart?vs_currency=usd&days=7&interval=daily'
+var axie_infinity = 'https://api.coingecko.com/api/v3/coins/axie-infinity/market_chart?vs_currency=usd&days=7&interval=daily'
+var apecoin = 'https://api.coingecko.com/api/v3/coins/apecoin/market_chart?vs_currency=usd&days=7&interval=daily'
+var the_sandbox = 'https://api.coingecko.com/api/v3/coins/the-sandbox/market_chart?vs_currency=usd&days=7&interval=daily'
 // Setting:
 //   - Site: https://www.coingecko.com/fr/api/documentation
 //   - /coins/{id}/markets_charts
 //      => id: bitcoin / ethereum / ...
 //      => vs_currency: usd
-//      => days: 9
+//      => days: 7
 //      => interval: daily
 
 
@@ -40,7 +40,7 @@ function getDataPrices(ctx, urlMarketPrice, colorGraph){
         var config = {
             type: 'line',
             data: {
-                labels: ['d9','d8', 'd7', 'd6', 'd5', 'd4', 'd3', 'd2', 'd1', 'd0'],
+                labels: ['d7', 'd6', 'd5', 'd4', 'd3', 'd2', 'd1', 'd0'],
                 datasets: [{ 
                     data: dataPrices,
                     borderColor: colorGraph,

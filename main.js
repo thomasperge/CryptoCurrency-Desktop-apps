@@ -8,6 +8,7 @@ function createWindow () {
     icon: path.join(__dirname, "./assets/icon.ico"),
     alwaysOnTop: true,
     setVisibleOnAllWorkspaces: true,
+    refresh: 1000,
     width: 415,
     height: 650,
     minWidth: 415, 
@@ -27,7 +28,9 @@ function createWindow () {
     },
   })
   win.loadFile('index.html')
+
 }
+
 
 app.whenReady().then(() => {
   createWindow()

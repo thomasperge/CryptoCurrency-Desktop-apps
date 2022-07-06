@@ -65,8 +65,6 @@ var settings = {
 
 $.ajax(settings).done(function (response){
     for(indice in response){
-        // console.log(response[indice])
-        
         // Function display
         function display(nameBlock, indice, percentageBlock, percentageBlock7d, changePriceDay, changePrice7d, colorPercent24h, colorPercent7d){
             nameBlock.innerHTML = indice.current_price

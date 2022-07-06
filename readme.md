@@ -23,4 +23,4 @@ npm start
 ### Dark and Light mode
 ![NightMode](./assets/AssetsCryptoCurrencyMode.png)
 
-⚠️ package.json >> ```script: {"start": "electron ."}```
+package.json >> ```script: {"start": "electron ."}```

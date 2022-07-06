@@ -16,7 +16,7 @@ npm install
 npm start
 ```
 
-### Demo Beta App Desktop and Phone
+### Demo Beta App Desktop and Phone (Iphone 12 PRO MAX)
 ![Assets-Desktop](./assets/AssetsCryptoCurrency.png)
 ![Assets-Phone](./assets/AssetsCryptoCurrencyPhone.png)
 
